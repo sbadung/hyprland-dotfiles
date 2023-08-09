@@ -1,0 +1,12 @@
+# DISABLE_MAGIC_FUNCTIONS="true"
+# DISABLE_LS_COLORS="true"
+# DISABLE_AUTO_TITLE="true"
+# COMPLETION_WAITING_DOTS="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+# HIST_STAMPS="mm/dd/yyyy"
+# ZSH_CUSTOM=/path/to/new-custom-folder
+# export MANPATH="/usr/local/man:$MANPATH"
+# export LANG=en_US.UTF-8
+# export ARCHFLAGS="-arch x86_64"
+
+# $ZSH/plugins, $ZSH_CUSTOM/plugins

@@ -1,0 +1,8 @@
+source "$HOME/.zsh/enviroment"
+source "$HOME/.zsh/aliases"
+source "$HOME/.zsh/plugins"
+source "$HOME/.zsh/theme"
+source "$HOME/.zsh/keyboad"
+source "$HOME/.zsh/updates"
+source "$ZSH/oh-my-zsh.sh"
+eval "$(starship init zsh)"

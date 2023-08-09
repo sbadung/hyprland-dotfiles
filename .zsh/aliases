@@ -1,0 +1,14 @@
+alias "l=ls"
+alias "la=ls -a"
+alias "ll=ls -al"
+
+alias "b=bat"
+alias "r=ripgrep"
+alias "clip= xclip -selection clipboard"
+alias "p=pacman"
+alias "y=yay"
+
+alias "c=code"
+alias "t=tmux"
+alias "v=nvim"
+alias "d=docker"

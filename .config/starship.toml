@@ -1,0 +1,68 @@
+[character]
+success_symbol = "[*](white)"
+vicmd_symbol = "[\ue62b](white)" # 
+error_symbol = "[\uf467](red)" # 
+
+[directory]
+read_only = " "
+style = "blue bold"
+
+[package]
+symbol = " "
+disabled = true
+
+[username]
+disabled = true
+
+[hostname]
+ssh_symbol = " "
+disabled = true
+
+[aws]
+symbol = "  "
+disabled = true
+
+[docker_context]
+disabled = true
+
+[git_branch]
+symbol = " "
+disabled = false
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = true
+
+[git_metrics]
+disabled = true
+
+[git_status]
+disabled = false
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[java]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = " "
+
+

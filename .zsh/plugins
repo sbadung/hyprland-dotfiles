@@ -1,0 +1,8 @@
+plugins=(
+    git
+    vi-mode
+    fzf
+    zsh-autosuggestions 
+    zsh-syntax-highlighting
+)
+

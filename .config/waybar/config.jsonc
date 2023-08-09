@@ -1,0 +1,121 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 35,
+    "modules-left": ["wlr/workspaces"],
+    "modules-right": ["network", "bluetooth", "custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone", "temperature", "hyprland/language", "clock"],
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸",
+        "format-it": "🇮🇹"
+    },
+
+    
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 Wired",
+        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        "format-linked": "󱘖 {ifname} (No IP)",
+        "format-disconnected": " Disconnected",
+        "format-alt": "󰤨 {signalStrength}",
+        "interval": 5
+    },
+
+    "bluetooth": {
+	    "format": "",
+	    "format-disabled": "{}", 
+	    "format-connected": " {num_connections}",
+	    "tooltip-format": " {device_alias}",
+	    "tooltip-format-connected": "{device_enumerate}",
+	    "tooltip-format-enumerate-connected": " {device_alias}"
+    },
+
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "on-click": "activate",
+        "format": "{icon}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip": true,
+        "tooltip-format": "{: %A, %B %e %Y}"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}",
+        "format-icons": ["🌕", "🌅", "🌕"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}",
+        "format-charging": "🔌 {capacity}",
+        "format-plugged": "🔌 {capacity}",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["🪫", "🪫", "🪫", "🪫", "🔋", "🔋", "🔋", "🔋", "🔋", "🔋", "🔋"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}",
+        "format-muted": "🔇",
+        "on-click": "pamixer -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pamixer -d 1",
+        "on-scroll-down": "pamixer -i 1",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["🔈", "🔉", "🔊"]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "🎙️ {volume}",
+        "format-source-muted": "🔇",
+        "on-click": "pamixer --default-source -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pamixer --default-source -d 5",
+        "on-scroll-down": "pamixer --default-source -i 5",
+        "scroll-step": 5
+    },
+    
+    "temperature": {
+        "thermal-zone": 1,
+        "format": "🌡{temperatureC}°",
+        "critical-threshold": 70,
+        "format-critical": " {temperatureC}°C",
+        "on-click": "foot --title btop sh -c 'btop'"
+    },
+    
+    "keyboard": {
+        "layout-format": "{layout}"
+    }
+    
+}

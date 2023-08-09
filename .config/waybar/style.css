@@ -1,0 +1,8 @@
+@import "./style/style-dark.css";
+@import "./animation/battery-blink.css";
+
+* {
+    font-family: "Iosevka NF";
+    font-size: 15px;
+    min-height: 20px;
+}   

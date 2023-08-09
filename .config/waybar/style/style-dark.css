@@ -1,0 +1,79 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+window#waybar {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    border-bottom: 3.5px solid #cdd6f4;
+    padding: 0;
+    margin: 0;
+    opacity: 0.90;
+}
+
+#workspaces {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: whitesmoke;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: red;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#custom-launch_wofi,
+#custom-lock_screen,
+#custom-light_dark,
+#custom-power_btn,
+#custom-power_profile,
+#custom-weather,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#temperature,
+#backlight,
+#language,
+#bluetooth {
+    margin: 2px 2px;
+    padding: 5px 5px;
+}
+
+#language { margin-right: 10px; }
+#temperature.critical { color: #e92d4d; }
+#custom-power_profile, #battery {
+    color: #a6e3a1;
+    border-left: 0px;
+}
